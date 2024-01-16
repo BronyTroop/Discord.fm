@@ -1,0 +1,24 @@
+-i https://pypi.org/simple
+anyio
+aquaui
+certifi
+charset-normalizer
+filelock
+future
+h11
+httpcore
+httpx
+idna
+packaging
+pillow
+plyer
+psutil
+pylast
+pypresence
+pystray
+pywin32
+requests
+six
+sniffio
+urllib3
+pipenv
