@@ -13,7 +13,11 @@ class TrackInfo:
     def __init__(self, manager, lastfm_track: pylast.Track):
         self.name = lastfm_track.title
         self.artist = lastfm_track.artist.name
-        self.cover = lastfm_track.get_cover_image(pylast.SIZE_MEDIUM)
+        self.cover = lastfm_track.get_cover_image(pylast.SIZE_LARGE)
+        if self.cover is None:
+            self.cover = 'https://raw.githubusercontent.com/EmanuelVH/Discord.fm/main/src/resources/lastfm.png'
+        if self.cover == 'https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png':
+            self.cover = 'https://raw.githubusercontent.com/EmanuelVH/Discord.fm/main/src/resources/lastfm.png'
         self.url = lastfm_track.get_url()
 
         handler = request_handler.RequestHandler(
