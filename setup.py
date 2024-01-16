@@ -9,7 +9,7 @@ from os import path as p
 
 import build
 
-PYINSTALLER_VER = "6.2.0"
+PYINSTALLER_VER = "6.3.0"
 MARKER_NAME = ".setup_done"
 
 current_platform = platform.system()
