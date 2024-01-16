@@ -20,7 +20,7 @@ class LastFMUser:
         if username == "":
             raise ValueError("Username is empty")
 
-        network = pylast.LastFMNetwork(api_key="2cd4164de6a19995e9ff4b59bd17fc20")
+        network = pylast.LastFMNetwork(api_key="b78db4c54979561c8cc742066a61fb39")
 
         self.username = username
         self.inactive_func = inactive_func
