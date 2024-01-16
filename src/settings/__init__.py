@@ -25,7 +25,7 @@ class Settings:
             "username": "",
             "max_logs": 5,
             "start_with_system": True,
-            "auto_update": True,
+            "auto_update": False,
             "pre_releases": False,
         }
 
