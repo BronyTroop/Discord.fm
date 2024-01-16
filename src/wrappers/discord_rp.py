@@ -17,7 +17,7 @@ class DiscordRP:
 
     def start(self):
         asyncio.set_event_loop(asyncio.new_event_loop())
-        self.presence = Presence("881950079240536135")
+        self.presence = Presence("1166226033310191676")
 
     def connect(self):
         if self.presence is None:
@@ -69,8 +69,7 @@ class DiscordRP:
                     end=int(time_remaining),
                     buttons=[{"label": "See on Last.fm", "url": track.url}],
                     large_image=track.cover,
-                    small_text="Powered by Discord.fm",
-                    small_image="lastfm",
+                    large_text="Powered by Discord.fm",
                 )
             else:
                 self.presence.update(
@@ -78,6 +77,5 @@ class DiscordRP:
                     state=artist,
                     buttons=[{"label": "See on Last.fm", "url": track.url}],
                     large_image=track.cover,
-                    small_text="Powered by Discord.fm",
-                    small_image="lastfm",
+                    large_text="Powered by Discord.fm",
                 )
